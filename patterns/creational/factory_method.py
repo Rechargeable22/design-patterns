@@ -22,9 +22,10 @@ class Creator:
     def factory_method(self):
         pass
 
-    def some_operation(self):
+    def some_operation(self) -> str:
         # Call the factory method to create a Product object.
         product = self.factory_method()
+        # Use the Product
         result = f"Creator: The same creator's code has just worked with {product.use()}"
         return result
 
@@ -50,3 +51,5 @@ if __name__ == '__main__':
 
     creator_b = ConcreteCreatorB()
     client_code(creator_b)
+
+    # In python, we can also use a dict of functions instead of this pattern
