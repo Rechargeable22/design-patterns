@@ -67,3 +67,5 @@ if __name__ == '__main__':
 
     sports_car = director.construct_sports_car()
     print(sports_car)
+
+    """In Python we can use named parameters for this."""
